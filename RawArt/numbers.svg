@@ -25,9 +25,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.98994949"
-     inkscape:cx="345.57113"
-     inkscape:cy="550.18141"
+     inkscape:zoom="0.49497475"
+     inkscape:cx="84.351085"
+     inkscape:cy="574.41021"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -53,10 +53,57 @@
      inkscape:groupmode="layer"
      id="layer1">
     <path
-       style="fill:#ff5500;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
-       d="m 241.58702,329.1733 c 14.93512,-4.1599 50.07134,-8.18928 51.27012,6.04605 7.83362,93.02317 -5.23583,157.53209 -3.57143,227.85714 20.56295,-1.96609 48.36493,1.31356 60.72916,1.21937 -8.89807,24.11905 2.42523,32.51601 -8.5863,38.78063 -10.06973,5.72881 -96.23834,-5.19226 -146.42857,-4.28571 -12.65287,0.22854 -4.79041,-37.57507 7.85714,-37.14286 18.71063,0.63941 33.54866,4.17095 49.28572,2.14286 3.87396,-75.98259 8.72432,-188.39767 -1.42857,-196.25 -8.35489,-6.46174 -31.04145,3.06965 -55.71429,4.10714 0.87654,-24.74707 27.23012,-36.73045 46.58702,-42.47462 z"
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 82.65004,84.743412 c 15.705394,-4.40162 52.65376,-8.665136 53.91436,6.397369 8.23764,98.428469 -5.50587,166.685839 -3.75563,241.097279 21.62348,-2.08033 50.85935,1.38989 63.86125,1.29022 -9.35699,25.52055 2.55032,34.40543 -9.02912,41.03406 -10.58909,6.0617 -101.201815,-5.49397 -153.980589,-4.53474 -13.305438,0.24182 -5.037474,-39.75845 8.262369,-39.30112 19.675624,0.67657 35.278921,4.41332 51.827617,2.26737 4.073756,-80.39773 9.174273,-199.34492 -1.502254,-207.65353 -8.785788,-6.83721 -32.642399,3.24801 -58.587732,4.34579 0.921747,-26.18504 28.634504,-38.86475 48.989729,-44.942698 z"
        id="path6157"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="csccssscscc" />
+       sodipodi:nodetypes="csccssscscc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\one.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 294.69382,88.098423 c 27.41847,-9.543664 69.22677,-8.249182 84.07711,19.205057 69.43202,128.36097 -86.27559,201.79117 -75.87546,220.70474 6.59486,11.99335 65.51819,-4.78592 99.67418,3.63381 -12.94585,19.28564 0.53304,42.85563 -11.66716,42.39439 -43.04089,-1.62726 -117.61114,15.11702 -152.54874,-6.05635 5.53666,-64.21734 50.60006,-97.70871 90.77155,-137.63666 57.83483,-57.48422 30.95646,-135.961564 -94.53166,-75.16657 -10.22738,-50.93427 33.98899,-57.989785 60.10018,-67.078417 z"
+       id="path6706"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="asscscsca"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\two.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 491.00766,98.667446 c 95.97962,-22.6237 145.06978,18.183984 143.89475,66.738184 -1.17521,48.56209 -77.23971,59.66623 -77.18493,73.19674 0.0544,13.45824 77.95079,29.60298 79.94153,57.58861 4.61611,64.89212 -95.91922,83.92481 -168.15287,91.22682 7.9039,-11.02609 -6.03725,-25.97447 4.41056,-32.02357 27.08077,-15.67928 118.28156,-4.6486 116.88004,-50.59187 -1.03853,-34.04423 -100.03608,-46.09042 -99.23777,-62.97071 1.29904,-27.46784 95.05831,-27.73112 95.92984,-80.7317 0.74207,-45.12721 -41.90039,-34.98374 -103.64833,-24.21951 13.78303,-18.29918 -6.48593,-31.02667 7.16718,-38.212994 z"
+       id="path6710"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cssscsssscc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\three.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 142.96234,427.61504 c -36.22272,1.53889 -116.963711,91.619 -106.513337,142.75459 2.480402,12.13705 71.130377,11.47113 102.100927,4.08985 -0.77311,42.96509 -4.01741,94.85611 -3.61434,147.52653 13.66081,-10.09222 22.86959,2.21024 31.9709,-6.51775 7.66989,-7.35526 -1.68019,-125.8975 -0.0254,-147.23693 17.76299,-3.50324 17.66196,-1.56483 38.60009,-2.90404 -4.97739,-12.80179 2.10885,-17.97204 -3.02387,-22.76529 -4.71089,-4.39932 -15.35206,-4.05806 -35.35248,0.10446 -1.86253,-49.58172 4.19344,-88.04731 -7.37862,-105.98667 -4.25578,-6.59743 -10.05599,-9.34974 -16.7639,-9.06475 z m -3.21301,32.8811 c 0.13002,9.5e-4 0.24965,0.0211 0.35752,0.0623 5.28588,2.01858 1.13764,68.36717 -1.3055,86.79338 -10.59156,5.59406 -69.255484,6.47146 -73.280764,-1.58343 -3.349751,-6.70311 66.037674,-85.33116 74.228744,-85.27221 z"
+       id="path6712"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csccsccscscccccscc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\four.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 408.29717,442.61499 c -5.66931,-13.8214 -134.12828,-17.97584 -140.38236,-11.13267 -8.33528,9.12044 -13.6775,124.54267 -3.0081,130.332 28.31846,15.36589 118.17143,8.22135 120.08664,52.6619 2.05891,47.77474 -114.91717,56.03299 -123.72705,67.97325 -7.02138,9.51626 15.41922,24.11567 2.36649,41.47641 52.72355,2.07828 166.38251,-42.17394 166.07129,-109.44966 -0.22843,-49.37676 -84.32074,-62.46082 -122.62518,-79.15082 -6.28084,-2.7367 -10.93698,-60.2029 -2.78182,-68.49076 10.33407,-10.50224 76.18308,7.95744 100.45886,7.95981 -5.65596,-13.65501 7.58368,-22.32424 3.54123,-32.17946 z"
+       id="path6717"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sssascasscs"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\five.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff5500;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:4.30000019;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 564.66483,421.75616 c -108.347,0.27146 -114.83897,294.8555 3.14062,294.8555 117.97958,0 105.20638,-295.12696 -3.14062,-294.8555 z m 0.75976,75.10938 c 54.1735,-0.13573 60.56012,147.42773 1.57032,147.42773 -58.98978,0 -55.74382,-147.292 -1.57032,-147.42773 z"
+       id="path6719"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\zero.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
   </g>
 </svg>
