@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 744.09448819 1052.3622047"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.91 r13725"
+   sodipodi:docname="buoy.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="314.31247"
+     inkscape:cy="799.1577"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="false"
+     inkscape:window-width="1280"
+     inkscape:window-height="737"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <path
+       style="fill:#fff3d0;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 251.82602,480.22482 c 17.96034,39.79428 149.84623,38.91753 172.231,4.54568 28.90152,-44.37831 -192.74307,-49.99376 -172.231,-4.54568 z"
+       id="path4136"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="sss"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 304.90474,427.45129 0.0893,-3.53554 65.65357,0 0,3.31457 z"
+       id="path5528-1"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 309.19789,398.54011 0.0893,-3.53554 57.95116,0 -0.25254,3.31457 z"
+       id="path5528-1-0"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 334.7393,307.43784 0,-162.21849 8.83213,0 0,162.22579 c 0,5.93767 -8.83213,5.77395 -8.83213,-0.007 z"
+       id="path5607"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyFlag.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="m 321.25,307.54077 0,7.67857 34.28572,0 0,-7.85714 z"
+       id="path4186"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 304.73059,453.05764 0.0893,-3.53554 65.65357,0 0,3.31457 z"
+       id="path5528"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:#ff4e60;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1"
+       d="M 315.67188 315.45508 L 298.15039 473.45117 C 301.31489 475.28988 305.48431 476.81221 310.29297 478.01562 L 365.63281 479.31641 C 370.23569 478.42366 374.30593 477.24208 377.55078 475.76953 L 361.27148 315.45508 L 315.67188 315.45508 z M 362.5 369.70117 L 372.32227 477.38086 L 302.67773 475.59375 L 314.66211 369.75195 L 362.5 369.70117 z "
+       id="path4155"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+    <path
+       style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 294.78779,471.2524 c 14.51588,12.39715 70.28025,13.38734 86.1155,2.27284"
+       id="path4136-3-9"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc"
+       inkscape:export-filename="C:\Users\joers\Documents\git\src\github.com\astropuffin\surfwars\Assets\art\buoyBase.png"
+       inkscape:export-xdpi="452.31"
+       inkscape:export-ydpi="452.31" />
+  </g>
+</svg>
