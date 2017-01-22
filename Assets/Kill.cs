@@ -5,7 +5,7 @@ using UnityEngine;
 public class Kill : MonoBehaviour {
 
     public GameObject enemyBoard;
-    public ParticleSystem particles;
+    public ParticleSystem particles, particles1, particles2;
     private float bleedTime = .3f;
     public FixedJoint2D hinge1, hinge2;
 	gameOver gameOverScript;
@@ -16,6 +16,7 @@ public class Kill : MonoBehaviour {
     public float blinkRate;
     private bool invincible;
     public SurfboardControl boardControl;
+    bool hit;
 
 	void Start()
 	{
@@ -32,8 +33,12 @@ public class Kill : MonoBehaviour {
     IEnumerator bleed()
     {
         particles.enableEmission = true;
+        particles1.enableEmission = true;
+        particles2.enableEmission = true;
         yield return new WaitForSeconds(bleedTime);
         particles.enableEmission = false;
+        particles1.enableEmission = false;
+        particles2.enableEmission = false;
     }
 
 	IEnumerator gameOverScreen(bool leftPlayer)
@@ -92,35 +97,17 @@ public class Kill : MonoBehaviour {
     {
 		if (dead)
 			return;
-		
-
 
         if (other.transform.gameObject == enemyBoard && !invincible)
         {
-            Vector2 hitForce = other.relativeVelocity * hitForceFactor;
-            Vector2 leftPos = hinge1.connectedAnchor;
-            Vector2 rightPos = hinge2.connectedAnchor;
-
-            if( boardControl.left )
-            {
-                leftPos.x += hitForce.magnitude;
-                rightPos.x += hitForce.magnitude;
-            }
-            else
-            {
-                leftPos.x -= hitForce.magnitude;
-                rightPos.x -= hitForce.magnitude;
-            }
-
-            if( hinge1.enabled)
-                hinge1.connectedAnchor = leftPos;
-
-            hinge2.connectedAnchor = rightPos;
 
             StartCoroutine(EnableIframes());
+            StartCoroutine(bleed());
 
-            if (Mathf.Abs(hinge2.connectedAnchor.x) < 20 && Mathf.Abs(hinge1.connectedAnchor.x) < 20)
+            if (!hit)
             {
+                hinge1.enabled = false;
+                hit = true;
                 return;
             }
 
@@ -130,10 +117,7 @@ public class Kill : MonoBehaviour {
                 j.enabled = false;
             }
 
-            Debug.Log("Dead");
-
             dead = true;
-            StartCoroutine(bleed());
             hinge1.enabled = false;
             hinge2.enabled = false;
 			StartCoroutine (gameOverScreen (gameObject.GetComponent<SurfboardControl>().left));

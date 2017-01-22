@@ -20,12 +20,25 @@ public class CameraFollow : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+		SetPlayers ();
+	}
+
+	void OnEnable()
+	{
+		Debug.Log ("Camera enabled");
+		// SetPlayers ();
+	}
+
+	public void SetPlayers()
+	{
 		midpointBetweenPlayers = Vector3.zero;
 		cameraTransform = this.GetComponent<Camera>().transform;
 
 		var players = GameObject.FindGameObjectsWithTag ("Board");
-		if (players.Length < 1)
+		Debug.Log ("numplayers: " + players.Length.ToString());
+		if (players.Length <= 1)
 		{
+            return;
 			Debug.LogError("Not enough players! Dynamic camera cannot be set");
 			player1 = player2 = cameraTransform;
 		}
@@ -34,9 +47,20 @@ public class CameraFollow : MonoBehaviour {
 		player1 = players[0].transform;
 		player2 = players[1].transform;
 	}
-		
+
 	// Update is called once per frame
 	void Update () {
+
+        if( Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
+		if (!enabled) {
+			Debug.Log ("skip update");
+			return;
+		}
+
 		midpointBetweenPlayers = Vector2.Lerp (player1.position, player2.position, 0.5f);
 
 		var newPos = new Vector3 (midpointBetweenPlayers.x, 
@@ -84,4 +108,5 @@ public class CameraFollow : MonoBehaviour {
 
         
 	}
+
 }

@@ -15,12 +15,13 @@ public class WaterEffect : MonoBehaviour {
 
     void Start()
     {
-        line = FindObjectOfType<LineRenderer>();
-        wave = FindObjectOfType<WaveSolver>();
+
     }
     
     void OnRenderImage(RenderTexture src, RenderTexture dst)
     {
+        line = FindObjectOfType<LineRenderer>();
+        wave = FindObjectOfType<WaveSolver>();
         line.GetPositions(linePos);
         for(int i =0; i < 100; i ++)
         {

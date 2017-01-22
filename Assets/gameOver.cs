@@ -15,8 +15,8 @@ public class gameOver : MonoBehaviour {
 		//gameOverText.SetActive (true);
 		leftPlayerScored = isLeftPlayer;
 		SceneManager.LoadScene ("ScoreScreen",LoadSceneMode.Additive);
-		FindObjectOfType<Score>().IncrementPlayerScore(isLeftPlayer);
-		SceneManager.UnloadSceneAsync ("main");
+		FindObjectOfType<ScoreKeeper>().IncrementPlayerScore(isLeftPlayer);
+		//SceneManager.UnloadSceneAsync ("main");
 	}
 
 

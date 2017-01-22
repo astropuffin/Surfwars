@@ -51,7 +51,12 @@ Shader "Hidden/Water"
 			{
 				float2 worldPos;
 				worldPos.x = lerp(lowerLeft.x, upperRight.x, -i.uv.x);
+#if !UNITY_UV_STARTS_AT_TOP
+				worldPos.y = lerp(lowerLeft.y, upperRight.y, 1-i.uv.y);
+#else
 				worldPos.y = lerp(lowerLeft.y, upperRight.y, i.uv.y);
+#endif
+
 
 				float cameraWidth = upperRight.x - lowerLeft.x;
 

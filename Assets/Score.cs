@@ -4,15 +4,18 @@ using UnityEngine.SceneManagement;
 using UnityEngine;
 
 public class Score : MonoBehaviour {
-	public int playerOneScore = 0;
-	public int playerTwoScore = 0;
+
 	public UnityEngine.UI.Image p1ScoreRect;
 	public UnityEngine.UI.Image p2ScoreRect;
+	private ScoreKeeper scoreKeeper;
 
 	public Sprite[] numberedSprites;
 
 	// Use this for initialization
 	void Start () {
+		scoreKeeper = FindObjectOfType<ScoreKeeper> ();
+		Debug.Log ("Disable camera");
+		FindObjectOfType<CameraFollow> ().enabled = false;
 
 		// Display scores
 		ShowCurrentScore (true);
@@ -27,22 +30,14 @@ public class Score : MonoBehaviour {
 		
 	}
 
-	public void IncrementPlayerScore(bool firstPlayer)
-	{
-		if (firstPlayer)
-			playerOneScore++;
-		else
-			playerTwoScore++;
-	}
-
 	public void ShowCurrentScore(bool firstPlayer)
 	{
 		if (firstPlayer) {
-			Debug.Log("P1 Sprite is: " + numberedSprites[playerOneScore]);
-			p1ScoreRect.overrideSprite = numberedSprites [playerOneScore];
+			Debug.Log("P1 Sprite is: " + numberedSprites[scoreKeeper.playerOneScore]);
+			p1ScoreRect.overrideSprite = numberedSprites [scoreKeeper.playerOneScore];
 		} else {
-			Debug.Log("P2 Sprite is: " + numberedSprites[playerTwoScore]);
-			p2ScoreRect.overrideSprite = numberedSprites [playerTwoScore];
+			Debug.Log("P2 Sprite is: " + numberedSprites[scoreKeeper.playerTwoScore]);
+			p2ScoreRect.overrideSprite = numberedSprites [scoreKeeper.playerTwoScore];
 		}
 			
 	}
@@ -54,7 +49,7 @@ public class Score : MonoBehaviour {
 
 		// Delete existing dudes
 		var dudes = GameObject.FindGameObjectsWithTag ("Player");
-		foreach (var dude in dudes)	{ Destroy (dude); }
+		foreach (var dude in dudes)	{ DestroyImmediate (dude); }
 
 		// Find all duder spawners
 		var spawners = FindObjectsOfType<DudeSpawner> ();
@@ -64,6 +59,7 @@ public class Score : MonoBehaviour {
 			spawn.GetComponent<DudeSpawner> ().SpawnMyDude ();
 		}
 
+		FindObjectOfType<CameraFollow> ().enabled = true;
 		// Disable da fukken game over screen.
 		SceneManager.UnloadSceneAsync ("ScoreScreen");
 

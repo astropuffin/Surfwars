@@ -10,8 +10,8 @@ PlayerSettings:
   targetDevice: 2
   useOnDemandResources: 0
   accelerometerFrequency: 60
-  companyName: DefaultCompany
-  productName: surfwars
+  companyName: Global Game Jam 2017
+  productName: Battle of the Boards
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13333334, g: 0.17254902, b: 0.21176471, a: 1}
@@ -514,7 +514,7 @@ PlayerSettings:
   vrEditorSettings: {}
   cloudServicesEnabled:
     Analytics: 0
-    Build: 0
+    Build: 1
     Collab: 1
     ErrorHub: 0
     Game_Performance: 0
@@ -523,6 +523,6 @@ PlayerSettings:
     UNet: 1
     Unity_Ads: 0
   cloudProjectId: 1e62b76d-534e-4924-ae44-363343f6e65e
-  projectName: surfwars
+  projectName: Battle of the Boards
   organizationId: joseph-schneider
   cloudEnabled: 0

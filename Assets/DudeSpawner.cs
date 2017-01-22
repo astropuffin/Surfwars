@@ -3,20 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class DudeSpawner : MonoBehaviour {
-	public GameObject dudePrefab;
+	public GameObject dude1Prefab;
+    public GameObject dude2Prefab;
 
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
         SpawnMyDude();
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    }
 
 	public void SpawnMyDude()
 	{
-		Instantiate (dudePrefab);
-	}
+        Instantiate(dude1Prefab);
+        Instantiate(dude2Prefab);
+        FindObjectOfType<CameraFollow>().SetPlayers();
+    }
 }

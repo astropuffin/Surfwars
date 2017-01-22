@@ -23,7 +23,7 @@ public class ScaleTo : MonoBehaviour {
 			var newScale = Vector3.Lerp(transform.lossyScale, scaleTargetWithBounce, (scaleSpeed+=scaleAccelerator));
 			transform.localScale = newScale;
 
-			Debug.Log (transform.lossyScale.ToString());
+			// Debug.Log (transform.lossyScale.ToString());
 			if(transform.localScale.x >= scaleTargetWithBounce.x - floatErrorFixer
 			   && transform.localScale.y >= scaleTargetWithBounce.y - floatErrorFixer
 			   && transform.localScale.z >= scaleTargetWithBounce.z - floatErrorFixer)
