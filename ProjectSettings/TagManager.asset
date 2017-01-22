@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Board
   layers:
   - Default
   - TransparentFX
@@ -15,9 +16,9 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
+  - Surfboard Left
+  - Dude
+  - Surfboard Right
   - 
   - 
   - 
@@ -40,4 +41,19 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: sky
+    uniqueID: 3921900437
+    locked: 0
+  - name: terrain
+    uniqueID: 523711253
+    locked: 0
+  - name: ocean
+    uniqueID: 1709348005
+    locked: 0
+  - name: players
+    uniqueID: 1547010171
+    locked: 0
+  - name: foreground
+    uniqueID: 879881773
     locked: 0
