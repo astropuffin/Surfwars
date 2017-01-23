@@ -39,17 +39,20 @@ public class SurfboardControl : MonoBehaviour
         var downButton = left ? KeyCode.S : KeyCode.K;
         var upButton = left ? KeyCode.W : KeyCode.I;
 
-        if (Input.GetKey(leftButton))
+        bool leftInput = Input.GetKey(leftButton) || Input.GetAxis("Horizontal") < -0.1f && left;
+        bool rightInput = Input.GetKey(rightButton) || Input.GetAxis("Horizontal") > 0.1f && left;
+
+        if (leftInput)
         {
             rb.AddForceAtPosition(Vector2.down * downForce * Time.deltaTime, transform.position - transform.right * separation);
         }
 
-        if (Input.GetKey(rightButton))
+        if (rightInput)
         {
             rb.AddForceAtPosition(Vector2.down * downForce * Time.deltaTime, transform.position + transform.right * separation);
         }
 
-        if (Input.GetKey(downButton) && !jumping)
+        if ((Input.GetKey(downButton) || Input.GetButton("Fire3") && left)  && !jumping )
         {
             headRB.AddForce(Vector2.down * duckForce * Time.deltaTime);
             torso.enabled = true;
@@ -58,7 +61,7 @@ public class SurfboardControl : MonoBehaviour
             board.density = duckBuyoancy;
             separation = duckSeparation;
         }
-        if( Input.GetKeyUp(downButton) && !jumping )
+        if( (Input.GetKeyUp(downButton) || Input.GetButtonUp("Fire3") && left) && !jumping )
         {
             torso.enabled = false;
             if(!kill.hit)
@@ -72,7 +75,7 @@ public class SurfboardControl : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(upButton) && !jumping)
+        if ( (Input.GetKeyDown(upButton) || Input.GetButtonDown("Fire1") && left) && !jumping)
         {
             StartCoroutine(Jump());
         }

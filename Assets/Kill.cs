@@ -9,7 +9,7 @@ public class Kill : MonoBehaviour {
     private float bleedTime = .3f;
     public FixedJoint2D hinge1, hinge2;
 	gameOver gameOverScript;
-	private float gameOverTime = 4;
+	private float gameOverTime = 3;
 	private bool dead = false;
     public float hitForceFactor;
     public float iFrames;

@@ -22,7 +22,7 @@ public class Score : MonoBehaviour {
 		ShowCurrentScore (false);
 
 		// Begin countdown to respawn.
-		StartCoroutine(RespawnDudes (5));
+		StartCoroutine(RespawnDudes (2));
 	}
 	
 	// Update is called once per frame

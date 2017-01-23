@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class WaterEffect : MonoBehaviour {
 
@@ -15,13 +16,19 @@ public class WaterEffect : MonoBehaviour {
 
     void Start()
     {
-
+        line = FindObjectOfType<LineRenderer>();
+        wave = FindObjectOfType<WaveSolver>();
+        SceneManager.sceneLoaded += Load;
     }
     
-    void OnRenderImage(RenderTexture src, RenderTexture dst)
+    void Load(Scene s, LoadSceneMode mode)
     {
         line = FindObjectOfType<LineRenderer>();
         wave = FindObjectOfType<WaveSolver>();
+    }
+
+    void OnRenderImage(RenderTexture src, RenderTexture dst)
+    {
         line.GetPositions(linePos);
         for(int i =0; i < 100; i ++)
         {
