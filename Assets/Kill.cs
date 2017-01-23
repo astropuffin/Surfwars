@@ -16,7 +16,7 @@ public class Kill : MonoBehaviour {
     public float blinkRate;
     private bool invincible;
     public SurfboardControl boardControl;
-    bool hit;
+    public bool hit;
 
 	void Start()
 	{
@@ -98,7 +98,7 @@ public class Kill : MonoBehaviour {
 		if (dead)
 			return;
 
-        if (other.transform.gameObject == enemyBoard && !invincible)
+        if (other.transform.gameObject == enemyBoard && !invincible && !enemyBoard.GetComponent<Kill>().dead)
         {
 
             StartCoroutine(EnableIframes());

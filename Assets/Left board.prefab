@@ -420,7 +420,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1088265821356928}
   m_LocalRotation: {x: -0, y: -0, z: 0.007981844, w: 0.99996823}
-  m_LocalPosition: {x: 16.7, y: 40.3, z: 0}
+  m_LocalPosition: {x: 16.7, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4718676473033154}
@@ -782,7 +782,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1303478455532828}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -794,7 +794,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1325135530595224}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -821,13 +821,14 @@ MonoBehaviour:
   iFrames: 1
   blinkRate: 0.1
   boardControl: {fileID: 114948456947436660}
+  hit: 0
 --- !u!114 &114215411703356422
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1267211260379580}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -863,7 +864,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1177216220027542}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -875,7 +876,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1768918284902194}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -887,7 +888,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1134821433251472}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -929,6 +930,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   left: 1
+  torsoRb: {fileID: 0}
   downForce: 3000
   separation: 1.5
   headRB: {fileID: 50886501131380166}
@@ -941,7 +943,8 @@ MonoBehaviour:
   regularSeparation: 1.5
   duckSeparation: 1.5
   board: {fileID: 114283014235013556}
-  jumpVelocity: 10
+  jumpVelocity: 22
+  gravity: 4
 --- !u!198 &198014260674346218
 ParticleSystem:
   m_ObjectHideFlags: 1

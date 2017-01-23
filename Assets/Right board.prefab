@@ -493,7 +493,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1792828927192288}
   m_LocalRotation: {x: -0, y: -0, z: -0.016282367, w: 0.99986744}
-  m_LocalPosition: {x: 50.75008, y: 14.4289055, z: 0}
+  m_LocalPosition: {x: 50.75008, y: 20, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4499679803012700}
@@ -850,7 +850,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1597901860458902}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -877,6 +877,7 @@ MonoBehaviour:
   iFrames: 0.5
   blinkRate: 0.1
   boardControl: {fileID: 114339167428472674}
+  hit: 0
 --- !u!114 &114339167428472674
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -889,6 +890,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   left: 0
+  torsoRb: {fileID: 0}
   downForce: 3000
   separation: 1.5
   headRB: {fileID: 50692560582491950}
@@ -901,14 +903,15 @@ MonoBehaviour:
   regularSeparation: 1.5
   duckSeparation: 1.5
   board: {fileID: 114684875110005110}
-  jumpVelocity: 10
+  jumpVelocity: 22
+  gravity: 4
 --- !u!114 &114349876364180608
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502360044701626}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -932,7 +935,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1297584430950012}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -944,7 +947,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1509789853799102}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -980,7 +983,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1685084625536056}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -992,7 +995,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1502755419549698}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -1016,7 +1019,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1059304958980502}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: eeed0e1d2f7caa24dbbc621d9dcc63f4, type: 3}
   m_Name: 
@@ -6279,7 +6282,7 @@ ParticleSystem:
   moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 1189886657
+  randomSeed: -1626945632
   InitialModule:
     serializedVersion: 3
     enabled: 1
