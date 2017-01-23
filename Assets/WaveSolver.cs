@@ -105,7 +105,7 @@ public class WaveSolver : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
         Solve();
         for(int i = 0; i < cellCount; i ++)

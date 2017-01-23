@@ -7,6 +7,7 @@ public class SurfboardControl : MonoBehaviour
 
     public bool left;
     Rigidbody2D rb;
+    Rigidbody2D torsoRb;
     public float downForce;
     public float separation;
     public Rigidbody2D headRB;
@@ -20,6 +21,7 @@ public class SurfboardControl : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        torsoRb = torso.GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
@@ -31,6 +33,7 @@ public class SurfboardControl : MonoBehaviour
         var leftButton = left ? KeyCode.A : KeyCode.J;
         var rightButton = left ? KeyCode.D : KeyCode.L;
         var downButton = left ? KeyCode.S : KeyCode.K;
+        var upButton = left ? KeyCode.W : KeyCode.I;
 
         if (Input.GetKey(leftButton))
         {
@@ -61,5 +64,25 @@ public class SurfboardControl : MonoBehaviour
             board.density = regularBuyoancy;
             separation = regularSeparation;
         }
+
+
+        if (Input.GetKeyDown(upButton))
+        {
+            StartCoroutine(Jump());
+        }
     }
+
+    public float jumpVelocity;
+
+    IEnumerator Jump()
+    {
+        // t = (-2 * v)/ a
+        // float jumpTime = 
+        leftShin.enabled = false;
+        rightShin.enabled = false;
+        torsoRb.velocity = Vector2.up * jumpVelocity;
+        yield return null;
+    }
+
 }
+

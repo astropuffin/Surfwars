@@ -941,6 +941,7 @@ MonoBehaviour:
   regularSeparation: 1.5
   duckSeparation: 1.5
   board: {fileID: 114283014235013556}
+  jumpVelocity: 10
 --- !u!198 &198014260674346218
 ParticleSystem:
   m_ObjectHideFlags: 1

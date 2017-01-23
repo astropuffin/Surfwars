@@ -901,6 +901,7 @@ MonoBehaviour:
   regularSeparation: 1.5
   duckSeparation: 1.5
   board: {fileID: 114684875110005110}
+  jumpVelocity: 10
 --- !u!114 &114349876364180608
 MonoBehaviour:
   m_ObjectHideFlags: 1
